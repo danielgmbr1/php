@@ -6,7 +6,8 @@ $listaUrls = [
     "https://www.youtube.com/watch?v=hnfEqbsEapA&list=PLGPvHimgTJid_kfFhmY5ouK3r_V1zsdkG&index=66", 
     "https://www.kaggle.com/code/brunosoaresdossantos/imagens-com-redes-neurais-cachorro-ou-gato",
     "https://www.amazon.com.br/FIFINE-transmiss%C3%A3o-computador-YouTube-AmpliGame-AM8/dp/B0BMFQP2ZZ/?_encoding=UTF8",
-    "https://chatgpt.com/c/6a9817e4-1468-83e9-a2ae-75d979b5d644"
+    "https://chatgpt.com/c/6a9817e4-1468-83e9-a2ae-75d979b5d644",
+    "https://gemini.google.com/app/2d2269a2574e4b4d"
 ];
 
 function quebrarUrl (array $listaUrls){
@@ -21,6 +22,7 @@ $urlsEncurtadas = [];
 
         $urlsEncurtadas[$chaveGerada] = [
             'original' => $urlAtual,
+
             'curta' => $urlSimplificada
         ];
         

@@ -1,14 +1,9 @@
 <?php
 
-declare (strict_types=1);
+declare(strict_types=1);
 
-$urls = parse_url("https://google.com/");
+use Uri\Rfc3986\Uri;
 
-var_dump($urls);
+$uri = new Uri ('safsaasjkfgakshfa');
 
-$today = 1;
-
-$message = "bem vindo ao dia  " . $today;
-
-echo $message;
-?>
+var_dump($uri);
