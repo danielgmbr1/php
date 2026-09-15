@@ -8,6 +8,7 @@ require_once CONTROLLERS . 'About.php';
 require_once CONTROLLERS . 'Home.php';
 require_once CONTROLLERS . 'Products.php';
 
+
 /**
  * @var Route[] $routes
  */
@@ -22,8 +23,8 @@ $routes = [
     [
         'id' => 'about',
         'value' => '/',
-        'controller' => 'Home',
-        'call' => 'makeHome',
+        'controller' => 'About',
+        'call' => 'makeAbout',
         'isRegex' => false
     ],
     [

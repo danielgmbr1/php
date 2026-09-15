@@ -1,7 +1,7 @@
 <?php
 
 function getPath(string $folder): string{
-    return realpath(__DIR__) . DIRECTORY_SEPARATOR . $folder . DIRECTORY_SEPARATOR;
+    return BASE_PATH . DIRECTORY_SEPARATOR . SOURCES . DIRECTORY_SEPARATOR . $folder . DIRECTORY_SEPARATOR;
 }
 
 function getComponentsPath(): string{
@@ -18,3 +18,7 @@ function getFunctionsPath(): string{
 function getPagesPath(): string{
     return getPath('pages');
 }   
+
+function getConfigsPath(): string{
+    return getPath('configs');
+}
