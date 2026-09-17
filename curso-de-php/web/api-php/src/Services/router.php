@@ -2,10 +2,6 @@
 
 $uri = $_SERVER['PATH_INFO'] ?? null;
 
-//Requeries 
-require_once 'routes.php';
-require_once 'route_resolver.php';
-
 if(empty($uri)){
     makeHome();
 

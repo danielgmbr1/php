@@ -22,3 +22,6 @@ function getPagesPath(): string{
 function getConfigsPath(): string{
     return getPath('configs');
 }
+function getServicesPath(): string{
+    return getPath('Services');
+}
